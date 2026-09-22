@@ -1,0 +1,305 @@
+/*
+  Beginner note:
+  - Change colours here to update the whole page.
+  - Change spacing values here if you want bigger or smaller sections.
+  - Edit the actual text in index.html.
+*/
+
+:root {
+  --cream: #f8f4ee;
+  --mist: #edf5fb;
+  --sky: #b9d9ee;
+  --blue: #4d7ea8;
+  --blue-deep: #2d4d68;
+  --text: #1d2d3a;
+  --muted: #49657a;
+  --white: #ffffff;
+  --shadow: rgba(45, 77, 104, 0.12);
+
+  /* Beginner note: adjust these spacing values to change layout spacing. */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --radius: 1rem;
+  --content-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--cream) 0%, var(--mist) 100%);
+}
+
+a {
+  color: var(--blue-deep);
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration-thickness: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--blue-deep);
+  color: var(--white);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  z-index: 1000;
+}
+
+.container {
+  width: min(100% - 2rem, var(--content-width));
+  margin: 0 auto;
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(77, 126, 168, 0.15);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(4px);
+  z-index: 10;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 4.5rem;
+  gap: 1rem;
+}
+
+.brand {
+  color: var(--blue-deep);
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  background: rgba(185, 217, 238, 0.4);
+  outline: 2px solid transparent;
+}
+
+.hero {
+  padding: var(--space-xl) 0;
+  background: linear-gradient(135deg, rgba(185, 217, 238, 0.6), rgba(248, 244, 238, 0.9));
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--blue-deep);
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.intro {
+  max-width: 45rem;
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.25rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-1px);
+}
+
+.button.primary {
+  background: var(--blue);
+  color: var(--white);
+  box-shadow: 0 8px 20px rgba(77, 126, 168, 0.22);
+}
+
+.button.secondary {
+  background: transparent;
+  border: 2px solid var(--blue);
+  color: var(--blue-deep);
+}
+
+.section {
+  padding: var(--space-xl) 0;
+}
+
+.alt-section {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.section-inner {
+  max-width: 850px;
+}
+
+.section-heading {
+  margin-bottom: 1.5rem;
+}
+
+.text-block {
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  padding: 0;
+  margin: 0;
+}
+
+.tag-list li {
+  background: var(--white);
+  border: 1px solid rgba(77, 126, 168, 0.2);
+  color: var(--blue-deep);
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: var(--white);
+  border: 1px solid rgba(77, 126, 168, 0.15);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 8px 18px var(--shadow);
+}
+
+.project-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.contact-section {
+  background: rgba(185, 217, 238, 0.28);
+}
+
+.contact-text {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.site-footer {
+  padding: 1.5rem 0 2rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+:focus-visible {
+  outline: 3px solid var(--blue-deep);
+  outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  .nav-wrap {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.75rem 0;
+  }
+
+  .main-nav ul {
+    justify-content: center;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .hero {
+    padding: 3rem 0;
+  }
+}
