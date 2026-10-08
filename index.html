@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Jaslyn WANG's personal website for her psychology interests and projects."
+      content="Jaslyn WANG — final-year psychology student at HSUHK. Counselling psychology, educational psychology, AI, and the books in between."
     />
-    <title>Jaslyn WANG | Psychology Student</title>
+    <title>Jaslyn WANG · A Study</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Change the name, welcome message, and section text here. -->
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
+    <!-- ===== Book cover header: dark ink, gold text ===== -->
     <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="#top" aria-label="Jaslyn WANG home">Jaslyn WANG</a>
+        <a class="brand" href="#top" aria-label="Jaslyn WANG, back to top">
+          Jaslyn WANG <span class="brand-note">· a study</span>
+        </a>
 
         <nav class="main-nav" aria-label="Main navigation">
           <ul>
+            <li><a href="#top">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills &amp; Interests</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#interests">Interests</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -30,102 +34,293 @@
     </header>
 
     <main id="main-content">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="container hero-content">
-          <div>
-            <p class="eyebrow">Hello and welcome</p>
-            <h1 id="hero-title">I'm Jaslyn WANG</h1>
-            <p class="intro">
-              A psychology student who enjoys learning, thinking deeply, and exploring ideas with curiosity.
+      <!-- ===== Hero: the title page ===== -->
+      <section class="hero" id="top">
+        <div class="container hero-inner">
+          <p class="hero-kicker">Welcome to my study</p>
+          <h1 class="hero-title">Jaslyn WANG</h1>
+          <p class="hero-sub">Psychology &middot; Counselling &middot; AI &middot; Books</p>
+          <p class="hero-intro">
+            I read people the way I read books — slowly, carefully, and with curiosity.
+          </p>
+          <p class="ornament" aria-hidden="true">❦</p>
+          <blockquote class="hero-quote">
+            &ldquo;The bird fights its way out of the egg. The egg is the world.&rdquo;
+            <cite>&mdash; Hermann Hesse, <em>Demian</em></cite>
+          </blockquote>
+          <div class="hero-links">
+            <a class="button gold" href="#about">Enter the study</a>
+            <a class="button ghost" href="#contact">Write to me</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Chapter I: About ===== -->
+      <section id="about" class="chapter">
+        <div class="container chapter-inner">
+          <div class="chapter-head">
+            <p class="chapter-no">Chapter I</p>
+            <h2>About</h2>
+          </div>
+
+          <div class="chapter-body">
+            <p class="lede">
+              I am a final-year psychology student at The Hang Seng University of Hong Kong,
+              specialising in educational and clinical psychology.
             </p>
-            <div class="hero-links">
-              <a class="button primary" href="#about">Learn more about me</a>
-              <a class="button secondary" href="#contact">Contact me</a>
+            <p>
+              Outside the classroom, I tutor children one-to-one, write psychological content
+              for the public, and support sleep research &mdash; and increasingly, I use AI
+              tools in all three.
+            </p>
+            <p>
+              My intellectual home sits at the overlap of two loves: counselling psychology
+              and technology. The writer I reread most is Hermann Hesse &mdash; fittingly, he
+              was once a patient of Carl Jung, whose <em>Red Book</em> I first opened in high
+              school and barely understood. I keep coming back.
+            </p>
+
+            <div class="fact-grid">
+              <div class="fact">
+                <h3>Studies</h3>
+                <p>BA (Hons) Psychology, Educational and Clinical Specialisation, HSUHK (2023&ndash;2027)</p>
+              </div>
+              <div class="fact">
+                <h3>Direction</h3>
+                <p>Counselling and educational psychology, and how AI changes the way we understand minds.</p>
+              </div>
+              <div class="fact">
+                <h3>Languages</h3>
+                <p>Mandarin (native) &middot; Cantonese (fluent) &middot; English (intermediate)</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section">
-        <div class="container section-inner">
-          <div class="section-heading">
-            <p class="eyebrow">About Me</p>
-            <h2>Who I am</h2>
+      <!-- ===== Chapter II: Experience ===== -->
+      <section id="experience" class="chapter chapter-alt">
+        <div class="container chapter-inner">
+          <div class="chapter-head">
+            <p class="chapter-no">Chapter II</p>
+            <h2>Experience</h2>
           </div>
 
-          <div class="text-block">
-            <p>
-              I am a Psychology student with a strong interest in counselling psychology and AI interaction. I enjoy reading, especially psychology books and the works of Hermann Hesse. Carl Jung is the figure in psychology I admire most. I have also developed a WeChat mini program for fun psychology quizzes.
-            </p>
-          </div>
+          <ol class="timeline">
+            <li>
+              <h3>Research Intern <span class="timeline-note">(S365 Sleep Cohort)</span></h3>
+              <p class="timeline-meta">
+                Peking University Sleep &amp; AI Lab, Beijing (Remote)
+                <span class="timeline-date">&middot; Jul 2026 &ndash; Present</span>
+              </p>
+              <p>
+                Tracking 93 participants&rsquo; home-based sleep data for a Shanghai Sixth
+                Hospital centre &mdash; monitoring device status and maintaining usage logs.
+              </p>
+            </li>
+
+            <li>
+              <h3>Psychological Content Operations Intern</h3>
+              <p class="timeline-meta">
+                Songjian Yinzhou, Shenzhen
+                <span class="timeline-date">&middot; Jun 2026 &ndash; Present</span>
+              </p>
+              <p>
+                Preparing mini-program content for training programs and assessments, running
+                pre-launch promotion of the &ldquo;A Little Closer&rdquo; dialogue card deck,
+                creating Xiaohongshu content, executing offline salons, and designing an H5
+                assessment page with AI tools.
+              </p>
+            </li>
+
+            <li>
+              <h3>Online Learning Companion <span class="timeline-note">(volunteer)</span></h3>
+              <p class="timeline-meta">
+                <span class="timeline-date">Apr &ndash; Jul 2026</span>
+              </p>
+              <p>
+                Weekly one-on-one academic tutoring and emotional companionship for a
+                left-behind primary-school student &mdash; where I learned that showing up
+                steadily is itself a form of support.
+              </p>
+            </li>
+
+            <li>
+              <h3>Psychology Intern <span class="timeline-note">(Art Therapy Content Creator)</span></h3>
+              <p class="timeline-meta">
+                Eins, Beijing (Remote)
+                <span class="timeline-date">&middot; Mar 2026 &ndash; Present</span>
+              </p>
+              <p>
+                Curating weekly Xiaohongshu art therapy content for readers living with
+                depression, PTSD, and anxiety &mdash; turning psychological concepts such as
+                boundaries into small, practical art exercises.
+              </p>
+            </li>
+
+            <li>
+              <h3>SEN Tutor Intern</h3>
+              <p class="timeline-meta">
+                Edge Development Centre, Hong Kong
+                <span class="timeline-date">&middot; Sep 2025 &ndash; Feb 2026</span>
+              </p>
+              <p>
+                Delivering one-on-one academic support to a five-year-old boy with ASD
+                (3-hour sessions, twice weekly), applying task analysis and a token economy
+                to support focus &mdash; and learning to see repetitive behaviours as
+                communication, not as problems.
+              </p>
+            </li>
+
+            <li>
+              <h3>Psychology Intern</h3>
+              <p class="timeline-meta">
+                Edge Development Centre, Hong Kong
+                <span class="timeline-date">&middot; Jun &ndash; Aug 2025</span>
+              </p>
+              <p>
+                Adapting UFLI Foundations phonics materials for local school contexts, and
+                assisting in counsellor training workshops and psychoeducational content
+                development.
+              </p>
+            </li>
+          </ol>
         </div>
       </section>
 
-      <section id="skills" class="section alt-section">
-        <div class="container section-inner">
-          <div class="section-heading">
-            <p class="eyebrow">Skills &amp; Interests</p>
-            <h2>What I enjoy</h2>
+      <!-- ===== Chapter III: Projects ===== -->
+      <section id="projects" class="chapter">
+        <div class="container chapter-inner">
+          <div class="chapter-head">
+            <p class="chapter-no">Chapter III</p>
+            <h2>Projects</h2>
           </div>
 
-          <ul class="tag-list" aria-label="Skills and interests">
-            <li>Counselling Psychology</li>
-            <li>AI Interaction</li>
-            <li>Reading and Writing</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="projects" class="section">
-        <div class="container section-inner">
-          <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h2>My Projects</h2>
-          </div>
+          <p class="chapter-lede">Selected work from my internships.</p>
 
           <div class="project-grid">
             <article class="project-card">
-              <h3>Psychology Quiz Mini Program</h3>
+              <p class="project-kicker">AI-assisted design</p>
+              <h3>H5 Psychology Assessment</h3>
               <p>
-                A WeChat mini program I developed for fun psychology quizzes.
+                Designed an H5 assessment page with AI tools to promote training programmes
+                &mdash; and the team adopted it. Built during my time at Songjian Yinzhou.
               </p>
             </article>
 
             <article class="project-card">
-              <h3>Reading Notes on Psychology</h3>
+              <p class="project-kicker">Content campaign</p>
+              <h3>&ldquo;A Little Closer&rdquo; Card Deck</h3>
               <p>
-                A collection of notes from psychology books I have read.
+                Ran pre-launch promotion of a dialogue card deck that helps people start
+                deeper conversations &mdash; Xiaohongshu content and offline salon execution
+                at Songjian Yinzhou.
               </p>
             </article>
 
             <article class="project-card">
-              <h3>Exploring Counselling Psychology</h3>
+              <p class="project-kicker">Curriculum</p>
+              <h3>UFLI Foundations Localisation</h3>
               <p>
-                A study space for my interest in counselling psychology and AI interaction.
+                Adapted an evidence-based phonics curriculum for local school contexts at
+                Edge Development Centre, alongside counsellor training workshops and
+                psychoeducational content development.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section contact-section">
-        <div class="container section-inner">
-          <div class="section-heading">
-            <p class="eyebrow">Contact</p>
-            <h2>Let’s connect</h2>
+      <!-- ===== Chapter IV: Interests ===== -->
+      <section id="interests" class="chapter chapter-alt">
+        <div class="container chapter-inner">
+          <div class="chapter-head">
+            <p class="chapter-no">Chapter IV</p>
+            <h2>Interests</h2>
+          </div>
+
+          <ul class="tag-list" aria-label="Interests">
+            <li>Counselling Psychology</li>
+            <li>Educational Psychology</li>
+            <li>AI &times; Psychology</li>
+            <li>Jungian Psychology</li>
+            <li>Reading &amp; Writing</li>
+            <li>K-pop &amp; Hip-hop Dance</li>
+          </ul>
+
+          <h3 class="shelf-heading">Tools &amp; skills</h3>
+          <ul class="tag-list" aria-label="Tools and skills">
+            <li>SPSS</li>
+            <li>R Studio</li>
+            <li>Photoshop</li>
+            <li>CapCut</li>
+            <li>Microsoft Office</li>
+            <li>Academic Writing</li>
+            <li>Data Analysis</li>
+          </ul>
+
+          <h3 class="shelf-heading">Certifications</h3>
+          <ul class="shelf-list" aria-label="Certifications">
+            <li>
+              <span class="shelf-title">Mental Health First Aid Certificate</span>
+              <span class="shelf-author">Mental Health Association of Hong Kong</span>
+            </li>
+            <li>
+              <span class="shelf-title">Putonghua Proficiency Certificate (Level 2-A)</span>
+              <span class="shelf-author">National Language Committee of China</span>
+            </li>
+          </ul>
+
+          <h3 class="shelf-heading">On my shelf</h3>
+          <ul class="shelf-list" aria-label="Books on my shelf">
+            <li>
+              <span class="shelf-title">Memories, Dreams, Reflections</span>
+              <span class="shelf-author">C. G. Jung</span>
+            </li>
+            <li>
+              <span class="shelf-title">The Red Book</span>
+              <span class="shelf-author">C. G. Jung</span>
+            </li>
+            <li>
+              <span class="shelf-title">Novels by Hermann Hesse</span>
+              <span class="shelf-author">H. Hesse</span>
+            </li>
+            <li>
+              <span class="shelf-title">An Introduction to Analytical Psychology</span>
+              <span class="shelf-author">on my desk</span>
+            </li>
+          </ul>
+
+          <blockquote class="closing-quote">
+            &ldquo;Who looks outside, dreams; who looks inside, awakes.&rdquo;
+            <cite>&mdash; C. G. Jung</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- ===== Chapter V: Contact ===== -->
+      <section id="contact" class="chapter contact-chapter">
+        <div class="container chapter-inner">
+          <div class="chapter-head">
+            <p class="chapter-no">Chapter V</p>
+            <h2>Contact</h2>
           </div>
 
           <p class="contact-text">
-            Feel free to email me:
-            <a href="mailto:s235227@hsu.edu.hk">s235227@hsu.edu.hk</a>
+            If you would like to talk about psychology, AI, or a good book, my inbox is open.
+          </p>
+          <p class="contact-links">
+            <a class="button gold" href="mailto:s235227@hsu.edu.hk">Email me</a>
           </p>
         </div>
       </section>
     </main>
 
+    <!-- ===== Colophon ===== -->
     <footer class="site-footer">
       <div class="container">
-        <p>© 2026 Jaslyn WANG</p>
+        <p class="ornament" aria-hidden="true">❦</p>
+        <p>Set in ink and paper &middot; &copy; 2026 Jaslyn WANG &middot; Built with vibe coding for COM1006</p>
       </div>
     </footer>
   </body>
